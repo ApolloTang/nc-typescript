@@ -5,7 +5,7 @@
     private _items: T[] = [];
     addItem(newItem: T) { this._items.push(newItem) }
     getItemByIndex(index: number) { return this._items[index] }
-    // getItems() { return this._items }
+    // getItems() { return this._items } // <--- commented out on purpose
   }
 
   type T = string|number
