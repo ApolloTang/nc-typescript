@@ -1,4 +1,4 @@
-[(()=>{
+[(()=>{ // eg: one
 
     type Func = (foo:string) => void
 
@@ -11,7 +11,7 @@
 
 
 })(),
-(()=>{
+(()=>{ // eg: two
 
     type Func<T> = (foo:T) => void
 
@@ -24,8 +24,7 @@
 
 
 })(),
-(()=>{
-
+(()=>{ // eg: three
 
     // function declaration
     function myFunctionDeclaration(a:string):void {
