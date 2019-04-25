@@ -1,5 +1,22 @@
-;
-(function () {
+
+
+
+;(function () {
+
+  type A<G> = (g:G)=>void
+  type B<H> = (g:H)=>void
+
+  type T = string
+  const foo:A<B<T>> = function (a){
+    a('hello')
+  }
+
+  foo(a=>{console.log(a)})
+
+})();
+
+
+;(function () {
 
   interface A<G>{
     (g:G): void
@@ -11,9 +28,9 @@
 
   type T = string
   const foo:A<B<T>> = function (a){
-    a('a')
+    a('world')
   }
 
-  foo(()=>{})
+  foo(a=>{console.log(a)})
 
 })();
