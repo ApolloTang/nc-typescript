@@ -1,5 +1,8 @@
 node_modules
+dist
 *.log
-*._gitignore
+
+_gitignore
+*.gitignore
 
 
