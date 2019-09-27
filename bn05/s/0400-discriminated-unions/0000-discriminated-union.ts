@@ -82,4 +82,4 @@ function area(s: Shape):(number|never) {
 }
 
 
-
+export = {}
