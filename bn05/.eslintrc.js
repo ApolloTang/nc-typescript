@@ -17,15 +17,12 @@ module.exports = {
     },
     "parserOptions": {
         "ecmaFeatures": {
-
         },
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
     "plugins": [
-
-      "@typescript-eslint"
-
+      "@typescript-eslint",
     ],
     "rules": {
       "semi": [1, "never"],
