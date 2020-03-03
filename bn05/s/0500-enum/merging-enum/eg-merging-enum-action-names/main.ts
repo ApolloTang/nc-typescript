@@ -11,8 +11,8 @@ import {
 //  usage
 // =======
 
-const actionType:TappActionNames = appActionNames.pageA_todos_add as TappActionNames
-// const actionType = appActionNames.pageB_todos_add as TappActionNames
+// const actionType:TappActionNames = appActionNames.pageA_todos_add  // <--- doesn't work
+const actionType = appActionNames.pageB_todos_add as TappActionNames  // <--- works
 
 switch (actionType) {
   case appActionNames.pageA_todos_add: {
@@ -20,9 +20,9 @@ switch (actionType) {
     console.log('is pageA_todos_add')
     break
   }
-  case appActionNames.pageB_todos_add: {
+  case appActionNames.pageA_todos_delete: {
     type T = typeof actionType
-    console.log('is pageB_todos_add')
+    console.log('is pageA_todos_delete')
     break
   }
   default:
