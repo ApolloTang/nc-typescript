@@ -14,7 +14,7 @@ const appActionNames = {
 
 // type TappActionNames = (typeof pageB_actionNames) & (typeof pageA_actionNames) // <-- does not work
 // type TappActionNames = typeof appActionNames               // <---does not work
-type TappActionNames = pageB_actionNames | pageA_actionNames  // <---work
+type TappActionNames = pageB_actionNames | pageA_actionNames  // <---works
 
 
 export {
